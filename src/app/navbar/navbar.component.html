@@ -1,0 +1,50 @@
+<header>
+  <!-- Barra de navegación con clases de Bootstrap para diseño y estilos -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <!-- Contenedor fluido para permitir la expansión de la barra de navegación -->
+    <div class="container-fluid">
+      <!-- Botón de alternar para mostrar/ocultar el menú en dispositivos pequeños -->
+      <button class="navbar-toggler" type="button" (click)="isNavbarCollapsed = !isNavbarCollapsed" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- Contenido de la barra de navegación que colapsa/expande según la variable isNavbarCollapsed -->
+      <div [ngbCollapse]="isNavbarCollapsed" class="collapse navbar-collapse" id="navbarNavDropdown">
+        <!-- Lista de navegación principal -->
+        <ul class="navbar-nav">
+          
+          <li routerLink="/" class="nav-item">
+            <a class="nav-link" (click)="collapseNavbar()" aria-current="page">Inicio</a>
+          </li>
+         
+          <li routerLink="/about" class="nav-item">
+            <a class="nav-link" (click)="collapseNavbar()">Sobre el autor</a>
+          </li>
+          <!-- Elemento de navegación desplegable -->
+          <li ngbDropdown class="nav-item dropdown">
+            <!-- Botón para activar el menú desplegable -->
+            <a class="nav-link dropdown-toggle" ngbDropdownToggle role="button">
+              Obra
+            </a>
+            <!-- Menú desplegable -->
+            <ul ngbDropdownMenu class="dropdown-menu dropdown-menu-dark">
+              <li routerLink="/cristal"><a class="dropdown-item" (click)="collapseNavbar()">Óleo sobre cristal</a></li>
+              <li routerLink="/grafito"><a class="dropdown-item" (click)="collapseNavbar()">Grafito sobre papel</a></li>
+              <li routerLink="/tabla"><a class="dropdown-item" (click)="collapseNavbar()">Óleo sobre tabla</a></li>
+              <li routerLink="/mixta"><a class="dropdown-item" (click)="collapseNavbar()">Mixta sobre tabla</a></li>
+            </ul>
+          </li>
+         
+          <li routerLink="/galeria" class="nav-item">
+            <a class="nav-link" (click)="collapseNavbar()">Galería</a>
+          </li>
+        
+          <li routerLink="/contacto" class="nav-item">
+            <a class="nav-link" (click)="collapseNavbar()">Contacto</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
+
+

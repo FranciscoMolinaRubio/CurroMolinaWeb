@@ -1,0 +1,39 @@
+
+.icon {
+    width: 30px;
+    height: 30px;
+    color: aliceblue;
+    background-size: contain;
+    background-repeat: no-repeat;
+    filter: invert(1) sepia(1) saturate(5) hue-rotate(180deg);
+}
+footer {
+    padding: 0px 0; 
+    animation: zoomFadeIn 3s ease-out forwards;
+    animation: slideUp 3s ease-out forwards;
+  }
+  
+.text-dark-custom {
+    color: #c2c2c2;
+  }
+
+.nav .nav-item {
+    margin-left: 10px;
+}
+
+
+
+/* Media Queries para diferentes dispositivos */
+
+/* Móviles pequeños (hasta 480px) */
+@media (max-width: 480px) {
+
+    .icon {
+        width: 20px;
+        height: 20px;
+    }
+
+    #texto{
+        font-size: 6px;
+    }
+}

@@ -1,0 +1,121 @@
+@font-face {
+    font-family: 'curroFont1';
+    src: url('/assets/fonts/brodies.ttf');
+}
+
+@font-face {
+    font-family: 'curroFont2';
+    src: url('/assets/fonts/Fifty Holliwing.otf');
+}
+
+@font-face {
+    font-family: 'titulopequeno';
+    src: url('/assets/fonts/EdgecuttingLiteMediumIt.ttf');
+}
+
+@font-face {
+    font-family: 'titulogrande';
+    src: url('/assets/fonts/Fifty Holliwing.otf');
+}
+
+@font-face {
+    font-family: 'titulomediano';
+    src: url('/assets/fonts/coolvetica rg.otf');
+}
+
+@font-face {
+    font-family: 'textolargo';
+    src: url('/assets/fonts/CreatoDisplay-Thin.otf');
+}
+
+@keyframes zoomFadeIn {
+    0% {
+        transform: scale(0.5);
+        opacity: 0;
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(200%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.ngx-gallery {
+    align-items: center;
+    margin: 0 auto;
+    width: 1200px;
+    height: 1000px;
+    border-color: #4a89ff; 
+  }
+
+  #titulopequeno {
+    font-family: 'titulopequeno', sans-serif;
+    color: #384a06;
+    font-size: 20px;
+    margin-bottom: 0;
+    animation: zoomFadeIn 1.5s ease-out forwards;
+    animation: slideUp 2s ease-out forwards;
+}
+
+#titulomediano {
+    margin: 0;
+    line-height: 1;
+    font-family: 'titulomediano', sans-serif;
+    font-size: 28px;
+    color: #000000;
+}
+
+#titulogrande {
+    font-family: 'titulogrande', sans-serif;
+    color: #000000;
+    font-size: 45px;
+    line-height: 1;
+    margin-bottom: 0;
+    animation: zoomFadeIn 1.5s ease-out forwards;
+    animation: slideUp 1.5s ease-out forwards;
+}
+
+.divider {
+    width: 15%;
+    margin: 0 auto;
+    animation: zoomFadeIn 1.5s ease-out forwards;
+    animation: slideUp 2s ease-out forwards;
+}
+
+#separador, #separador2 {
+    width: 300px;
+    opacity: 0.8;
+    animation: slideUp 1s ease-out forwards;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}

@@ -1,0 +1,52 @@
+<!-- Contenedor principal para el título "Mixta sobre tabla" -->
+<div class="contenedor">
+    <div class="centradoPequeño">Mixta sobre tabla</div> <!-- Título centrado en la imagen de fondo -->
+</div>
+
+<!-- Cita destacada en la página -->
+<div class="frase">"Los buscadores de oro cavan mucho y hallan poco". Heráclito de Efeso</div>
+
+<!-- Imagen decorativa de divisor -->
+<div class="divider">
+    <img src="./assets/icons/divider4.png" id="separador" alt="divisor"> <!-- Divisor entre secciones -->
+</div>
+
+<!-- Contenedor que incluye texto y un video -->
+<div class="contenedortexto">
+    <div class="detalle-con-texto">
+        <!-- Video de fondo que se reproduce automáticamente -->
+        <video autoplay muted loop playsinline class="tagline-video">
+            <source src="./assets/videos/hojasoroandroidSilence.mp4" type="video/mp4">
+        </video>
+        <!-- Descripción de la técnica mixta utilizada en las obras -->
+        <div class="textos">
+            <p id="titulomediano">Técnica mixta.</p>
+            <p id="textolargo">Diferentes materiales (yeso, carbonato, papel) usualmente cubiertos de óleos o pigmentos
+                metálicos <br>
+                Periodo de investigación donde se trató de encontrar texturas adecuadas al motivo. Los estilos a veces
+                se veían también afectados por los resultados inciertos,
+                con lo que esta sección es quizás excesivamente ecléctica. Sin embargo, en la extrañeza se encuentra la
+                búsqueda.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor de la galería de imágenes -->
+<div class="contenedorSlider">
+    <!-- Información sobre la obra y una cita -->
+    <div class="contenedorTextoSlider">
+        <p id="titulopequeno">Obra plástica</p> <!-- Título de la sección -->
+        <p id="titulogrande">“Si pinto a mi perro exactamente como es, naturalmente tendré dos perros, pero no una obra
+            de arte”. Goethe</p> <!-- Cita de Goethe -->
+        <!-- Segundo divisor gráfico -->
+        <div class="divider2">
+            <img src="./assets/icons/divider4.png" id="separador2" alt="">
+        </div>
+        <!-- Indicador de pantalla completa para la galería -->
+        <p id="textolargo2">(Clic sobre la previsualización para pantalla completa.)</p><br>
+    </div>
+
+    <!-- Componente de galería ngx-gallery para mostrar imágenes -->
+    <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+</div>

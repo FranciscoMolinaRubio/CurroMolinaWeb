@@ -1,0 +1,247 @@
+.row {
+  font-family: 'textolargo', sans-serif;
+  font-size: 20px;
+}
+
+.banner {
+  height: 100vh;
+  font-family: 'curroFont1', sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+  background-color: #000;
+}
+
+.banner video {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+
+h2 {
+  font-family: 'curroFont2', sans-serif;
+  color: #e0e0e0;
+}
+
+p,
+li {
+  font-family: 'textolargo', sans-serif;
+  color: #e0e0e0;
+  font-size: 20px;
+}
+
+a {
+  -webkit-transition: .3s all ease;
+  -o-transition: .3s all ease;
+  transition: .3s all ease;
+}
+
+a,
+a:hover {
+  text-decoration: none !important;
+}
+
+.text-black {
+  color: #c3c3c3;
+}
+
+.content {
+  margin-left: 40%;
+  margin-right: auto;
+  text-align: left;
+  margin-top: 10%;
+  /* padding: 12rem 0; */
+}
+
+h2 {
+  font-size: 3.5rem;
+  font-weight: 700;
+}
+
+.form-control {
+  border-radius: 10px;
+  /* Borde redondeado */
+  background-color: #e5e5e5;
+  /* Color de fondo personalizado */
+  border: none;
+  border: 1px solid #d9d9d9;
+  border-radius: 0;
+  transition: background-color 0.3s, border-color 0.3s;
+  /* Transición suave */
+}
+
+.form-control:active,
+.form-control:focus {
+  background-color: #ffffff;
+  /* Color de fondo en foco */
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #ffe7aa;
+}
+
+.col-form-label {
+  color: #c3c3c3;
+}
+
+.btn,
+.form-control {
+  height: 55px;
+}
+
+.btn:active,
+.btn:focus {
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+label.error {
+  font-size: 12px;
+  color: red;
+}
+
+#message {
+  resize: vertical;
+}
+
+#form-message-warning,
+#form-message-success {
+  display: none;
+}
+
+#form-message-warning {
+  color: #B90B0B;
+}
+
+#form-message-success {
+  color: #55A44E;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.submitting {
+  float: left;
+  width: 100%;
+  padding: 10px 0;
+  display: none;
+  font-weight: bold;
+  font-size: 12px;
+  color: #c3c3c3;
+}
+
+
+@media (max-width: 768px) {
+
+  .content {
+    position: absolute;
+    margin-left: 0%;
+    margin-right: auto;
+    text-align: left;
+    margin-top: 0%;
+    top: 0;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    z-index: 1;
+    padding: 20px;
+  }
+
+  .text-start {
+    text-align: left;
+  }
+
+  #cover {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+  }
+
+  .banner {
+    padding: 120px 0;
+    height: 1000px;
+    font-family: 'BlusaFont', sans-serif;
+    position: relative;
+    width: 100%;
+    background-color: #000;
+  }
+
+  .banner video {
+    width: 500%;
+  }
+
+  .banner-left p {
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 40px;
+    font-family: 'BlusaFont', sans-serif;
+    opacity: .8;
+    font-size: 10px;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+    font-weight: 700;
+  }
+
+  p,
+  ul,
+  .col-form-label,
+  .btn {
+    font-size: 0.9rem;
+  }
+
+  .form-control {
+    height: 30px;
+  }
+
+  .container {
+    display: block;
+    margin-bottom: 20px;
+    margin-top: 0px;
+  }
+
+  .contenedor {
+    height: 200px;
+  }
+
+  #lista {
+    font-size: 20px;
+  }
+
+  #fotoContacto {
+    display: none;
+  }
+
+  .centradoPequeño {
+    font-size: 35px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+
+  .container{
+    width:500%;
+    height: auto;
+    margin-left: -50%;
+    margin-top: 0%;
+    top:0;
+  }
+
+  .content{
+    margin-top:3%;
+
+  }
+
+  .banner{
+    width:100%;
+    height: 120%;
+  }
+}
+

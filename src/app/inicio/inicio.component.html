@@ -1,0 +1,100 @@
+<!-- Contenedor del carrusel de imágenes -->
+<div class="contenedor">
+  <!-- Carrusel de Bootstrap para mostrar imágenes en rotación -->
+  <div id="carouselExampleControls" class="carousel slide">
+    <div class="carousel-inner">
+      <!-- Primer slide del carrusel -->
+      <div class="carousel-item active">
+        <img class="d-block w-100" src="./assets/Cuadros/carousel-1.jpg" alt="First slide">
+      </div>
+      <!-- Segundo slide del carrusel -->
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./assets/Cuadros/carousel-2.jpg" alt="Second slide">
+      </div>
+      <!-- Tercer slide del carrusel -->
+      <div class="carousel-item">
+        <img class="d-block w-100" src="./assets/Cuadros/carousel-3.jpg" alt="Third slide">
+      </div>
+    </div>
+    <!-- Botón para deslizar al slide anterior -->
+    <button class="carousel-control-prev custom-left" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <!-- Botón para deslizar al siguiente slide -->
+    <button class="carousel-control-next custom-right" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+  <!-- Título y subtítulo centrados -->
+  <div class="centradoPequeño">Curro Molina</div>
+  <div class="centrado">Óleos, Metal, Grafito & Cristal</div>
+</div>
+
+<!-- Imagen decorativa de divisor -->
+<div class="divider">
+  <img src="./assets/icons/divider4.png" id="separador" alt="">
+</div> 
+
+<!-- Sección "Sobre el autor" con collage y texto descriptivo -->
+<div class="sobremi">
+   <div class="collage">
+      <img src="./assets/Cuadros/collage2.jpg" id="collage" alt="">
+  </div> 
+  <!-- Información sobre el autor -->
+  <div class="texto">
+      <p id="titulopequeno">Sobre el autor</p>
+      <p id="titulogrande">"Trabajando he conseguido ascender desde la nada hasta la pobreza más extrema". Groucho Marx</p>
+      <!-- Segundo divisor gráfico -->
+      <div class="divider2">
+          <img src="./assets/icons/divider4.png" id="separador2" alt="">
+      </div>
+      <!-- Detalles sobre las técnicas usadas por el autor -->
+      <div class="detalle-con-texto">
+          <img src="./assets/Cuadros/Sin título-2.jpg" id="detalle1" alt="">
+          <div class="textos">
+              <p id="titulomediano">Usando pan de oro, de plata o cobre junto con óleos...</p>
+              <p id="textolargo">... y pigmentos metálicos llena de color sus composiciones a base de naturalezas muertas, anatomías, animales y en algún caso abstracciones en las que continúa dialogando con la luz.</p>
+          </div>
+      </div>
+      <div class="detalle-con-texto">
+          <div class="textos">
+              <p id="titulomediano">La implicación del espectador.</p>
+              <p id="textolargo">Se sumerge al observador en los reflejos y tonalidades que a causa del metal con 
+                el que se trabaja varían siempre con la posición de contemplación de éste.</p>
+          </div>
+          <img src="./assets/Cuadros/puto1.jpg" id="detalle2" alt="">
+      </div>
+  </div> 
+</div> 
+
+<!-- Sección con frase destacada y enlaces a diferentes técnicas -->
+<div class="fraseYcontainer">
+  <div class="frase">"Diferentes técnicas<br>en constante exploración".</div> 
+
+  <div class="container">
+    <!-- Enlaces a diferentes técnicas o categorías de obras -->
+    <div class="co" routerLink="/mixta" id="col1">
+      <a class="content">
+        <span>Mixta sobre tabla</span></a>
+    </div>
+    <div class="co" routerLink="/tabla">
+      <a class="content">
+        <span>Óleo y oro sobre tabla</span></a>
+    </div>
+    <div class="co" routerLink="/grafito">
+      <a class="content">
+        <span>Grafito sobre papel</span></a>
+    </div>
+    <div class="co" routerLink="/cristal">
+      <a class="content">
+        <span>Óleo y oro sobre cristal</span></a>
+    </div>
+    <div class="co" routerLink="/mixta">
+      <a class="content">
+        <span>Cerámica sobre tabla</span></a>
+    </div>
+  </div> 
+</div>

@@ -1,0 +1,54 @@
+<!-- Contenedor principal que envuelve el texto centrado pequeño -->
+<div class="contenedor">
+    <div class="centradoPequeño">Óleo sobre tabla</div> <!-- Texto pequeño centrado dentro del contenedor -->
+</div>
+
+<!-- Cita o frase destacada con estilo personalizado -->
+<div class="frase">"Los mejores, más variados y duraderos placeres, son los de la mente". A. Schopenhauer</div>
+
+<!-- Separador visual utilizando una imagen de divisor -->
+<div class="divider">
+    <img src="./assets/icons/divider4.png" id="separador" alt="divisor"> <!-- Imagen del divisor con descripción alternativa -->
+</div>
+
+<!-- Contenedor de texto con un video de fondo y descripción -->
+<div class="contenedortexto">
+    <div class="detalle-con-texto"> <!-- Contenedor para el video y el texto asociados -->
+        <video autoplay muted loop playsinline class="tagline-video"> <!-- Video que se reproduce automáticamente en bucle sin sonido -->
+            <source src="./assets/videos/arbolaco3Silence.mp4" type="video/mp4"> <!-- Fuente del video en formato MP4 -->
+        </video>
+        <div class="textos">
+            <!-- Título de tamaño mediano -->
+            <p id="titulomediano">Técnica mixta.</p>
+            <!-- Texto descriptivo detallado sobre la técnica de pintura -->
+            <p id="textolargo">Óleo sobre pan de oro, plata o cobre aplicado en tabla. <br>
+                Superponer el óleo a las finas láminas de oro, pata o cobre supone una dificultad añadida al manejo del
+                color. Los tiempos de secado, la absorción del material e incluso el manejo del pincel varían al
+                encontrarse tan delicada superficie.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor para un slider de imágenes y texto relacionado -->
+<div class="contenedorSlider">
+    <!-- Texto relacionado con el slider de imágenes -->
+    <div class="contenedorTextoSlider">
+        <p id="titulopequeno">Obra plástica</p> <!-- Título pequeño para la sección -->
+        <p id="titulogrande">"El arte es la única forma de salvarnos del horror de la existencia". Émile Cioran</p> <!-- Frase destacada con autor -->
+        <!-- Segundo divisor visual utilizando la misma imagen de divisor -->
+        <div class="divider2">
+            <img src="./assets/icons/divider4.png" id="separador2" alt=""> <!-- Imagen de divisor con descripción alternativa vacía -->
+        </div>
+        <!-- Texto informativo adicional para el usuario -->
+        <p id="textolargo2">(Clic sobre la previsualización para pantalla completa.)</p><br>
+    </div>
+
+    <!-- Galería de imágenes utilizando el componente ngx-gallery -->
+    <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+</div>
+
+<!-- Tercer divisor visual utilizando la misma imagen de divisor -->
+<div class="divider2">
+    <img src="./assets/icons/divider4.png" id="separador3" alt="">
+</div>

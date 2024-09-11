@@ -1,0 +1,47 @@
+<!-- Contenedor principal que incluye una descripción del arte -->
+<div class="contenedor">
+    <!-- Texto centrado para el título de la obra -->
+    <div class="centradoPequeño">Grafito sobre papel</div>
+</div>
+
+<!-- Frase destacada que resalta una cita relacionada con el arte -->
+<div class="frase">«No hay arte sin transformación». Robert Bresson</div>
+
+<!-- Divisor visual con imagen -->
+<div class="divider">
+    <img src="./assets/icons/divider4.png" id="separador" alt="divisor">
+</div>
+
+<!-- Contenedor de texto con un video y una descripción -->
+<div class="contenedortexto">
+    <div class="detalle-con-texto">
+        <!-- Video que se reproduce automáticamente y se repite en bucle -->
+        <video autoplay muted loop playsinline class="tagline-video">
+            <source src="./assets/videos/lapiz.mp4" type="video/mp4">
+        </video>
+        <!-- Texto descriptivo relacionado con la obra -->
+        <div class="textos">
+            <p id="titulomediano">Grafito sobre papel.</p>
+            <p id="textolargo">Problemas físicos me obligaron a reencontrarme con el lápiz y el papel. <br>
+                La primera técnica usada en mi vida bien podría convertirse también en la última. Continúa el placer
+                cinestésico del roce de la barra de grafito sobre la rugosidad del material. Sus olores.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Contenedor para la galería de imágenes -->
+<div class="contenedorSlider">
+    <div class="contenedorTextoSlider">
+        <!-- Texto que introduce la sección de la galería -->
+        <p id="titulopequeno">Obra plástica</p>
+        <p id="titulogrande">“Sin arte la vida sería un error”. Friedrich Nietzsche</p>
+        <div class="divider2">
+            <img src="./assets/icons/divider4.png" id="separador2" alt="">
+        </div>
+        <p id="textolargo2">(Clic sobre la previsualización para pantalla completa.)</p><br>
+    </div>
+
+    <!-- Galería de imágenes con opciones y configuración -->
+    <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+</div>

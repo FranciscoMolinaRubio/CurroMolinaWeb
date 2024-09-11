@@ -1,0 +1,333 @@
+.contenedor {
+  position: relative;
+  width: 100%;
+  animation: fadeIn 1s ease-out;
+  height: 400px;
+  overflow: hidden;
+  background-image: url('/assets/Cuadros/banner1.jpg');
+  background-size: cover;
+  background-position: center;
+}
+
+.contenedor2 {
+  position: relative;
+  width: 100%;
+  height: 400px;
+  overflow: hidden;
+  background-image: url('/assets/Cuadros/banner3.jpg');
+  background-size: cover;
+  background-position: center;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.contenedor2 .overlay {
+  position: absolute; 
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.8); 
+  z-index: 1; 
+}
+
+a {
+font-family: "titulomediano";
+font-size: 27px;
+color: rgb(69, 65, 82);
+cursor: pointer;
+transition: font-size 0.3s ease;
+text-decoration: none; 
+}
+
+a:hover{
+  font-size: 30px;
+}
+
+.contenedor2 .detalle-con-texto2 {
+  position: relative; 
+  width:60%;
+  margin-left: 10%;
+  margin-top: 2.5%;
+  z-index: 2; 
+  color: #fff;
+  display: flex;
+  align-items:center;
+  gap: 20px;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 2s ease-out forwards;
+}
+
+
+.centradoPequeño {
+  position: absolute;
+  animation: zoomFadeIn 1s ease-out forwards;
+  top: 45%;
+  left: 33%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  color: rgb(255, 255, 255);
+  z-index: 2;
+  text-align: center;
+  font-family: 'curroFont1', sans-serif;
+  font-size: 65px;
+  line-height: 1.2;
+}
+
+.divider {
+  margin-top: 1%;
+  margin-bottom: 2%;
+  width: 8%;
+  animation: zoomFadeIn 1s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
+}
+
+#separador {
+  margin-top: 2%;
+  width: 250px;
+  opacity: 0.8;
+}
+
+#collage {
+  margin-top: 3%;
+  height: 750px;
+  width: 750px;
+  max-width: 100%;
+  margin-right: 50px;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.texto {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
+}
+
+#separador2 {
+  width: 200px;
+  opacity: 0.8;
+  margin-top: -10px;
+}
+
+#separador3 {
+  width: 200px;
+  opacity: 0.8;
+  margin-top: -10px;
+}
+
+.divider2 {
+  width: 11%;
+  margin-left: 12%;
+}
+
+#detalle1, #detalle4 {
+  width: 350px;
+  max-width: 300px;
+  height: auto;
+}
+
+#detalle2 {
+  width: 350px;
+  max-width: 300px;
+  height: auto;
+}
+
+.textos, .textos2 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#textolargo {
+  margin: 0;
+  line-height: 1;
+  font-family: 'textolargo', sans-serif;
+  font-size: 18px;
+  color: #000000;
+}
+
+.detalle-con-texto {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 2s ease-out forwards;
+}
+
+
+@media (max-width: 768px) {
+
+  .detalle-con-texto {
+    display: block;
+    margin-bottom: 2%;
+    gap: 20px;
+    animation: zoomFadeIn 1.5s ease-out forwards;
+    animation: slideUp 2s ease-out forwards;
+  }
+
+  .contenedor2 {
+    flex-direction: column; 
+    align-items: center; 
+    height: 600px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .detalle-con-texto2 {
+    flex-direction: column; 
+    align-items: center;
+    text-align: center; 
+    justify-content: center;
+    width: 100%;
+  }
+
+  #detalle4 {
+    width: 100%; 
+    margin-bottom: 20px; 
+    justify-content: center;
+    margin-left: 40px;
+    margin-top: 20px;
+  }
+
+  .textos2{
+    margin-left: 60px; 
+    width: 100%;
+  }
+
+  #detalle1 {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 300px;
+    height: auto;
+  }
+
+
+  #detalle2 {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 300px;
+    height: auto;
+  }
+
+  .contenedor {
+    height: 170px;
+    position: relative;
+    width: 100%;
+    animation: fadeIn 1s ease-out;
+    overflow: hidden;
+    background-image: url('/assets/Cuadros/banner1.jpg');
+    background-size: cover;
+    background-position: center;
+  }
+
+  #titulopequeno {
+    margin-top: 8%;
+    text-align: center;
+    margin-left: 28%;
+    margin-bottom: 15px;
+  }
+
+  .centradoPequeño {
+    font-size: 40px;
+    width: 80%;
+    margin-left: -20%;
+    top:30%;
+  }
+
+  .divider,
+  .divider2 {
+    width: 50%;
+  }
+
+  #separador{
+    display: none;
+  }
+
+  #separador2 {
+    width: 70px;
+    margin-left: 45%;
+  }
+
+  #separador3{
+display: none;
+  }
+
+  #collage {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+  }
+
+  .sobremi {
+    flex-direction: column;
+    padding: 10px;
+  }
+  .textos {
+    justify-content: center;
+    align-items: center;
+    margin-left: 18%;
+    width:65%;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .texto {
+    text-align: center;
+    gap: 10px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+
+#separador3, #separador2, #separador {
+display:none;
+}
+  .centradoPequeño {
+    font-size: 70px;
+    top: 30%;
+  }
+
+  .divider {
+    width: 90%;
+    margin-left: 40%;
+  }
+
+  .divider2 {
+
+    margin-left: 25%;
+  }
+
+  .collage {
+    width: 100%;
+  }
+
+  #collage {
+    width: 100%;
+    height: auto;
+    margin: 20px auto;
+  }
+
+  .sobremi {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .texto {
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+  }
+}
