@@ -1,0 +1,41 @@
+<div class="contenedor">
+    <div class="centradoPequeño">Óleo sobre cristal</div>
+</div>
+
+<div class="frase">«El arte es garantía de cordura». Louise Bourgeois</div>
+
+<!-- Línea divisoria con imagen de un divisor -->
+<div class="divider">
+    <img src="./assets/icons/divider4.png" id="separador" alt="divisor">
+</div>
+
+<div class="contenedortexto">
+    <div class="detalle-con-texto">
+        <!-- Video en bucle con autoplay y muted -->
+        <video autoplay muted loop playsinline class="tagline-video">
+            <source src="./assets/videos/haciarriba.mp4" type="video/mp4">
+        </video>
+        <div class="textos">
+            <p id="titulomediano">Técnica mixta.</p>
+            <p id="textolargo">Óleo sobre pan de oro, plata o cobre aplicado sobre cristal. <br> Usada la técnica
+                llamada a la «sisa» o «mordiente»: Se usa con la imprimación de una capa del adhesivo llamado mixtión.
+                Se ha de esperar que adquiera el grado de sequedad justo para poder aplicar las hojas de pan de oro,
+                este punto se sabe cuando arrastrando el dedo sobre la superficie se produce una especie de chirrido.
+            </p>
+        </div>
+    </div>
+</div>
+
+<!-- Sección de galería con texto y galería de imágenes -->
+<div class="contenedorSlider">
+    <div class="contenedorTextoSlider">
+        <p id="titulopequeno">Obra plástica</p>
+        <p id="titulogrande">“Crear es matar a la muerte”. Romain Rolan</p>
+        <div class="divider2">
+            <img src="./assets/icons/divider4.png" id="separador2" alt="">
+        </div>
+        <p id="textolargo2">(Clic sobre la previsualización para pantalla completa.)</p><br>
+    </div>
+    <!-- Galería de imágenes con configuración predefinida -->
+    <ngx-gallery [options]="galleryOptions" [images]="galleryImages" class="ngx-gallery"></ngx-gallery>
+</div>

@@ -1,0 +1,565 @@
+.contenedor {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+  animation: fadeIn 1s ease-out;
+}
+
+.centrado {
+  position: absolute;
+  animation: zoomFadeIn 1s ease-out forwards;
+  top: 40%;
+  left: 35%;
+  width: 30%;
+  transform: translate(-50%, -50%);
+  color: #000000;
+  text-align: center;
+  font-family: 'curroFont1', sans-serif;
+  font-size: 63px;
+  line-height: 1.2;
+}
+
+.centradoPequeño {
+  position: absolute;
+  animation: zoomFadeIn 2.5s ease-out forwards;
+  top: 32%;
+  left: 32%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  color: #ffffff;
+  text-align: center;
+  font-family: 'curroFont1', sans-serif;
+  font-size: 46px;
+  line-height: 1.5;
+}
+
+
+.carousel-inner {
+  opacity: .7;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  display: none;
+}
+
+.custom-left {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-left: 40px;
+  background-image: url('/assets/icons/left.png');
+  background-size: 100% 100%;
+}
+
+.custom-right {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  margin-right: 40px;
+  background-image: url('/assets/icons/right.png');
+  background-size: 100% 100%;
+}
+
+.custom-left,
+.custom-right {
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#collage {
+  margin-top: 3%;
+  height: 750px;
+  width: 750px;
+  max-width: 100%;
+  margin-right: 20px;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.sobremi {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.collage {
+  margin-right: 20px;
+}
+
+.texto {
+  max-width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 20px;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
+}
+
+.divider {
+  width: 15%;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+#separador {
+  display: block;
+  width: 200px;
+  opacity: 0.8;
+}
+
+#separador2 {
+  width: 200px;
+  opacity: 0.8;
+  margin-top: -10px;
+}
+
+#separador3 {
+  width: 200px;
+  opacity: 0.8;
+  margin-top: -10px;
+}
+
+.divider2 {
+  width: 11%;
+  margin-left: 12%;
+}
+
+#detalle1 {
+  width: 300px;
+  max-width: 200px;
+  height: auto;
+}
+
+#detalle2 {
+  width: 300px;
+  max-width: 200px;
+  height: auto;
+}
+
+.textos {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#textolargo {
+  margin: 0;
+  line-height: 1;
+  font-family: 'textolargo', sans-serif;
+  font-size: 1vw;
+  color: #000000;
+}
+
+.detalle-con-texto {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.fraseYcontainer{
+  width: 100%;
+  height: 800px;
+  background: linear-gradient(rgba(136, 180, 78, .05), rgba(136, 180, 78, .05)), url(/assets/Cuadros/back.png) left bottom no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 2s ease-out forwards;
+}
+
+.container {
+  
+  max-width: 100%;
+  display: flex;
+  justify-content: center;
+  height: 700px;
+  gap: 15px;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 2s ease-out forwards;
+
+  >div {
+    height: 80%;
+    flex: 0 0 120px;
+    border-radius: 0.5rem;
+    transition: 0.5s ease-in-out;
+    cursor: pointer;
+    box-shadow: 1px 5px 15px #1e0e3e;
+    position: relative;
+    overflow: hidden;
+
+    &:nth-of-type(1) {
+      background: url("/assets/Cuadros/Globo.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(2) {
+      background: url("/assets/Cuadros/process1.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(3) {
+      background: url("/assets/Cuadros/arbolpaco1.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(4) {
+      background: url("/assets/Cuadros/defgolonmarta2.jpg") no-repeat 50% / cover;
+    }
+
+    &:nth-of-type(5) {
+      background: url("/assets/Cuadros/pareja2.jpg") no-repeat 50% / cover;
+    }
+
+    .content {
+      font-size: 1.5rem;
+      color: #fff;
+      display: flex;
+      align-items: center;
+      padding: 15px;
+      opacity: 0;
+      flex-direction: column;
+      height: 100%;
+      justify-content: flex-end;
+      background: rgb(2, 2, 46);
+      background: linear-gradient(0deg,
+          rgba(2, 2, 46, 0.6755077030812324) 0%,
+          rgba(255, 255, 255, 0) 100%);
+      transform: translatey(100%);
+      transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+      visibility: hidden;
+
+      span {
+        display: block;
+        margin-top: 5px;
+        font-size: 1.2rem;
+      }
+    }
+
+    &:hover {
+      flex: 0 0 250px;
+      box-shadow: 1px 3px 15px #ffffff;
+      transform: translatey(-30px);
+    }
+
+    &:hover .content {
+      opacity: 1;
+      transform: translatey(0%);
+      visibility: visible;
+    }
+  }
+}
+
+.frase {
+  position: relative;
+  animation: zoomFadeIn 1.5s ease-out forwards;
+  animation: slideUp 1s ease-out forwards;
+  padding-top: 50px;
+  margin-top: 5%;
+  left: 33%;
+  width: 35%;
+  transform: translate(-50%, -50%);
+  color: rgb(0, 0, 0);
+  z-index: 2;
+  text-align: center;
+  font-family: 'titulogrande', sans-serif;
+  line-height: 0.9;
+  font-size: 40px;
+  margin-bottom: 40px;
+}
+
+
+@media (max-width: 768px) {
+
+  .fraseYcontainer{
+    width: 100%;
+    height: 500px;
+  }
+
+  .container {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-left: 0%;
+    height: 400px;
+    gap: 15px;
+    animation: zoomFadeIn 1.5s ease-out forwards;
+    animation: slideUp 2s ease-out forwards;
+
+    >div {
+      flex: 0 0 50px;
+      border-radius: 0.5rem;
+      transition: 0.5s ease-in-out;
+      cursor: pointer;
+      box-shadow: 1px 5px 15px #1e0e3e;
+      position: relative;
+      overflow: hidden;
+
+      &:nth-of-type(1) {
+        background: url("/assets/Cuadros/Globo.jpg") no-repeat 50% / cover;
+      }
+
+      &:nth-of-type(2) {
+        background: url("/assets/Cuadros/process1.jpg") no-repeat 50% / cover;
+      }
+
+      &:nth-of-type(3) {
+        background: url("/assets/Cuadros/arbolpaco1.jpg") no-repeat 50% / cover;
+      }
+
+      &:nth-of-type(4) {
+        background: url("/assets/Cuadros/defgolonmarta2.jpg") no-repeat 50% / cover;
+      }
+
+      &:nth-of-type(5) {
+        background: url("/assets/Cuadros/pareja2.jpg") no-repeat 50% / cover;
+      }
+
+      .content {
+        font-size: 1.5rem;
+        color: #fff;
+        display: flex;
+        align-items: center;
+        padding: 15px;
+        opacity: 0;
+        flex-direction: column;
+        height: 100%;
+        justify-content: flex-end;
+        background: rgb(2, 2, 46);
+        background: linear-gradient(0deg,
+            rgba(2, 2, 46, 0.6755077030812324) 0%,
+            rgba(255, 255, 255, 0) 100%);
+        transform: translatey(100%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s 0.2s;
+        visibility: hidden;
+
+        span {
+          display: block;
+          margin-top: 5px;
+          font-size: 1.2rem;
+        }
+      }
+
+       &:hover {
+        flex: 0 0 250px;
+        transform: none;
+      }
+
+      &:hover .content {
+        opacity: 1;
+        transform: none;
+      } 
+    }
+  }
+
+  .frase {
+    font-size: 18px;
+    width: 80%;
+    margin-top: 3%;
+    margin-left: -25%;
+    animation: zoomFadeIn 1.5s ease-out forwards;
+    animation: slideUp 1s ease-out forwards;
+  }
+
+  .custom-left {
+    margin-top: 0%;
+    width: 25px;
+    height: 25px;
+  }
+
+  .custom-right {
+    margin-top: 0%;
+    width: 25px;
+    height: 25px;
+  }
+
+  a {
+    z-index: 20;
+  }  
+
+  .banner {
+    position: relative;
+    overflow: hidden;
+  }
+
+  .banner::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 0;
+  }
+
+  .centradoPequeño {
+    position: absolute;
+    animation: zoomFadeIn 1s ease-out forwards;
+    top: 25%;
+    left: 18%;
+    width: 60%;
+    transform: translate(-50%, -50%);
+    color: #ffffff;
+    text-align: center;
+    font-family: 'curroFont1', sans-serif;
+    font-size: 26px;
+    line-height: 1.2;
+  }
+
+  .centrado {
+    position: absolute;
+    animation: zoomFadeIn 1s ease-out forwards;
+    top: 45%;
+    left: 10%;
+    width: 75%;
+    transform: translate(-50%, -50%);
+    color: #000000;
+    text-align: center;
+    font-family: 'curroFont1', sans-serif;
+    font-size: 30px;
+    line-height: 1.2;
+  }
+
+  .contenedor {
+    position: relative;
+    width: 100%;
+    animation: fadeIn 1s ease-out;
+    height: 200px;
+    overflow: hidden;
+  }
+
+  #titulopequeno {
+    text-align: center;
+    margin-left: 25%;
+    margin-bottom: 15px;
+  }
+
+  .divider {
+    margin-left: 0px;
+    width: 40%;
+    left: 0;
+  }
+
+  #separador {
+    display: none;
+    left: 0;
+    margin-left: -20px;
+    width: 30%;
+  }
+
+  #separador2 {
+
+    display: none;
+  }
+
+  #collage {
+    width: 100%;
+    padding-left: 15%;
+    height: auto;
+    top: 0%;
+  }
+
+  .sobremi {
+    top: 0%;
+    margin-top: 0px;
+    flex-direction: column;
+    padding: 0px;
+  }
+
+  .texto {
+    width:80%;
+    text-align: center;
+    gap: 10px;
+    margin-top: 10%;
+  }
+
+  .detalle-con-texto {
+    display: block;
+    margin-bottom: 2%;
+    gap: 20px;
+    animation: zoomFadeIn 1.5s ease-out forwards;
+    animation: slideUp 2s ease-out forwards;
+  }
+
+  #detalle1 {
+    width: 100%;
+    margin-bottom: 20px;
+    max-width: 300px;
+    height: auto;
+  }
+
+  #detalle2 {
+    width: 100%;
+    margin-top: 20px;
+    max-width: 300px;
+    height: auto;
+  }
+
+  #textolargo {
+    margin: 0;
+    line-height: 1;
+    font-family: 'textolargo', sans-serif;
+    font-size: 18px;
+    color: #000000;
+  }
+
+  .textos{
+    width:70%;
+    margin-left: 12%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .centradoPequeño {
+    font-size: 40px;
+    top:18%;
+  }
+
+  .centrado {
+    top: 32%;
+    left: 15%;
+    width: 70%;
+    font-size: 48px;
+  }
+
+  .divider {
+    width: 90%;
+    margin-left: 40%;
+  }
+
+  .divider2 {
+    margin-left: 25%;
+  }
+
+  .collage {
+    width: 80%;
+    justify-content: center;
+  }
+
+  #collage {
+    width: 150%;
+    margin: 20px auto;
+  }
+
+  .sobremi {
+    flex-direction: column;
+    padding: 15px;
+  }
+
+  .texto {
+    max-width: 80%;
+    margin: 0 auto;
+    gap: 15px;
+  }
+    #textolargo{
+      font-size: 20px;
+  }
+}

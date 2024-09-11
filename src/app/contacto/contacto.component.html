@@ -1,0 +1,97 @@
+
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+
+<div class="banner">
+  <video autoplay muted loop playsinline class="tagline-video d-none d-md-block">
+    <source src="./assets/videos/loop.mp4" type="video/mp4">
+  </video>
+
+  <!-- Imagen para pantallas pequeñas -->
+  <img src="./assets/Cuadros/florJapoOsc.jpg" class="d-block d-md-none" alt="Banner Mobile" id="cover">
+
+ 
+  <div class="content">
+    <div class="container">
+      <div class="row">
+
+        <!-- Columna de Texto -->
+        <div class="col-12 col-md-5 mb-4 mb-md-0">
+          <div class="text-start"> <!-- Contenedor adicional para alinear el texto a la izquierda -->
+            <h2 id="contacta">Contacta</h2>
+            <p class="mb-4">
+              Si quieres hacer alguna sugerencia o contactar con el autor por cualquier motivo, no dudes en hacerlo a través de alguna de las siguientes vías.
+            </p>
+
+            <!-- Lista de Contacto -->
+            <ul class="list-unstyled ps-md-3 mb-4" id="lista">
+              <li><span class="me-3"><fa-icon [icon]="icon"></fa-icon></span> +34 699528360</li>
+              <li><span class="me-3"><fa-icon [icon]="icon2"></fa-icon></span> fmolina.rubio&#64;gmail.com </li>
+              <li><span class="me-3"><fa-icon [icon]="icon3"></fa-icon></span>Sevilla</li>
+            </ul>
+
+            <!-- Iconos de Redes Sociales -->
+            <ul class="d-flex align-items-center gap-3 list-unstyled ps-md-3 mb-5">
+              <li>
+                <a href="https://www.facebook.com/profile.php?id=61553378762807&locale=es_ES" target="_blank">
+                  <img src="./assets/icons/iconizer-fb.svg" width="30" height="30" alt="Facebook" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.instagram.com/curro_molina_r/" target="_blank">
+                  <img src="./assets/icons/iconizer-insta.svg" width="28" height="28" alt="Instagram" />
+                </a>
+              </li>
+              <li>
+                <a href="https://x.com/G0RECKI" target="_blank">
+                  <img src="./assets/icons/iconizer-x.svg" width="40" height="40" alt="Twitter" />
+                </a>
+              </li>
+              <li>
+                <a href="https://www.youtube.com/@giacommettii" target="_blank">
+                  <img src="./assets/icons/iconizer-you.svg" width="35" height="35" alt="YouTube" />
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Columna del Formulario -->
+        <div class="col-md-6">
+          <div class="text-start"> <!-- Contenedor adicional para alinear el formulario a la izquierda -->
+            <form [formGroup]="form" class="mb-5" method="post" id="contactForm" name="contactForm"
+              action="javascript:void(0)" (submit)="send()">
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="name" class="col-form-label">Nombre</label>
+                  <input formControlName="from_name" type="text" class="form-control" name="name" id="name">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="email" class="col-form-label">Email</label>
+                  <input formControlName="from_email" type="text" class="form-control" name="email" id="email">
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12 form-group">
+                  <label for="message" class="col-form-label">Mensaje</label>
+                  <textarea formControlName="message" class="form-control" name="message" id="message" cols="30" rows="7"></textarea>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-md-12">
+                  <input type="submit" value="Enviar" class="btn btn-secondary rounded-2 py-2 px-4">
+                  <span class="submitting"></span>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
